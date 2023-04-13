@@ -1,0 +1,68 @@
+/*
+#include<iostream>
+using namespace std;
+#define terbesar(a,b)((a)>(b)?(a):(b))
+int main(){
+	int y,z;
+	cout<<"masukkan bilangan ke 9 :";
+	cin>>y;
+	cout<<endl;
+	cout<<"masukkan bilangan ke 10 :";
+	cin>>z;
+	cout<<endl;
+	int a_besar=terbesar(y,z);
+	cout<<"bilangan terbesar yaitu :"<<a_besar<<endl;
+	
+	return 0;
+}
+*/
+
+//#include <iostream>
+// using namespace std;
+//
+// int l(int i, int n) {
+//     if (n == 0) {
+//         return 1;
+//     } else {
+//         return i * l(i, n - 1);
+//     }
+// }
+//
+// int main() {
+//     int a, c;
+//
+//     cout << "Masukkan bilangan ke-9 npm anda: ";
+//     cin >> a;
+//     cout << "Masukkan bilangan ke-10 npm anda: ";
+//     cin >> c;
+//
+//     int npm = a * 10 + c;
+//     int hsl = l(c, a);
+//
+//     cout << "Hasil x digit ke-10 [" << c << "] sebanyak " << a << " x adalah " << hsl << endl;
+//
+//     return 0;
+//}
+
+
+ #include <iostream>
+ using namespace std;
+
+ int main() {
+     int a, c;
+     int* ptr;
+
+     cout << "Masukkan bilangan ke-9 npm anda: ";
+     cin >> a;
+     cout << "Masukkan bilangan ke-10 npm anda: ";
+     cin >> c;
+
+     int npm = a * 10 + c;
+
+     ptr = &npm;
+
+     cout << "isi pointer mu " << *ptr << endl;
+     cout << "data disimpan di" << ptr << endl;
+
+     return 0;
+ }
